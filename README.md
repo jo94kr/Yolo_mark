@@ -1,7 +1,8 @@
 # Yolo_mark
-**Windows** & **Linux** GUI for marking bounded boxes of objects in images for training Yolo v3 and v2
+**Windows** & **Linux** Yolo v3, v2 학습용 이미지에 경계상자를 표시하기위한 Windows 및 Linux기반 GUI
 
-* To compile on **Windows** open `yolo_mark.sln` in MSVS2013/2015, compile it **x64 & Release** and run the file: `x64/Release/yolo_mark.cmd`. Change paths in `yolo_mark.sln` to the OpenCV 2.x/3.x installed on your computer:
+* Visual Studio2013/2015에서 열린 `yolo_mark.sln` 에서 컴파일하려면 **x64 & Release**를 컴파일 하고 파일을 실행하세요
+`x64/Release/yolo_mark.cmd`.`yolo_mark.sln`를 컴퓨터에 설치된 OpenCV 2.x/3.x 로의 경로로 변경:
 
     * (right click on project) -> properties -> C/C++ -> General -> Additional Include Directories: `C:\opencv_3.0\opencv\build\include;`
         
