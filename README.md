@@ -1,7 +1,7 @@
 # Yolo_mark
 **Windows** & **Linux** Yolo v3, v2 학습용 이미지에 경계상자를 표시하기위한 Windows 및 Linux기반 GUI
 
-## 사용방법
+## 설치방법
 1. [OpenCV](https://github.com/opencv/opencv/releases) 3.4.5버전 설치
   
   ※ 지원버전: OpenCV 2.x and OpenCV 3.x ※ 
@@ -33,7 +33,9 @@
 
   ![프로젝트빌드](./images/6.png)
 
-* To compile on **Linux** type in console 3 commands:
+※ dll파일이 없다는 오류 발생시 다운받은 OpenCV폴더에서 `opencv_world345.dll`를 검색한 후 파일을 복사하여 `yolo_mark\x64\Release` 폴더에 붙여넣기 한뒤 다시 빌드합니다. 
+
+* **Linux**에서 컴파일하려면 아래의 콘솔 명령어를 입력하세요:
     ```
     cmake .
     make
@@ -43,10 +45,11 @@
 
 
 --------
+##사용방법
+※실행전 기존에 있던 파일들을 지워줍니다※
 
-1. To test, simply run 
-  * **on Windows:** `x64/Release/yolo_mark.cmd`
-  * **on Linux:** `./linux_mark.sh`
+1. 빌드 완료후 `Yolo_mark\x64\Release` 폴더 안에있는 `yolo_mark.cmd`를 실행시킵니다.
+  * **Linux인 경우:** `./linux_mark.sh`
 
 2. To use for labeling your custom images:
 
