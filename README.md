@@ -47,7 +47,7 @@
 --------
 ## 사용방법
 
-※실행전 기존에 있던 파일들을 지워줍니다※
+※실행전 `Yolo_mark\x64\Release\data\img`에 있던 파일들을 지워줍니다※
 
 1. 빌드 완료후 `Yolo_mark\x64\Release` 폴더 안에있는 `yolo_mark.cmd`를 실행시킵니다.
   * **Linux인 경우:** `./linux_mark.sh`
