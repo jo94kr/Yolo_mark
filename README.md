@@ -4,7 +4,7 @@
 ## 사용방법
 1. [OpenCv](https://github.com/opencv/opencv/releases) 3.4.5버전 설치
   ※ 지원버전: OpenCV 2.x and OpenCV 3.x ※ 
-  
+
   ![OpenCV다운로드](./images/1.png)
 
   * 다운받은 파일을 실행시켜 설치합니다.
