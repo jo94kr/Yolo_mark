@@ -1,12 +1,35 @@
 # Yolo_mark
 **Windows** & **Linux** Yolo v3, v2 학습용 이미지에 경계상자를 표시하기위한 Windows 및 Linux기반 GUI
 
-* Visual Studio2013/2015에서 열린 `yolo_mark.sln` 에서 컴파일하려면 **x64 & Release**를 컴파일 하고 파일을 실행하세요
-`x64/Release/yolo_mark.cmd`.`yolo_mark.sln`를 컴퓨터에 설치된 OpenCV 2.x/3.x 로의 경로로 변경:
+## 사용방법
+1. [OpenCv](https://github.com/opencv/opencv/releases) 3.4.5버전 설치
+  ※ 지원버전: OpenCV 2.x and OpenCV 3.x ※ 
+  
+  ![OpenCV다운로드](./images/1.png)
 
-    * (right click on project) -> properties -> C/C++ -> General -> Additional Include Directories: `C:\opencv_3.0\opencv\build\include;`
-        
-    * (right click on project) -> properties -> Linker -> General -> Additional Library Directories: `C:\opencv_3.0\opencv\build\x64\vc14\lib;`
+  * 다운받은 파일을 실행시켜 설치합니다.
+
+2. Yolo_mark 다운로드
+
+  ![Yolo_mark다운로드](./images/2.png)
+
+3. Yolo_mark 폴더에 있는 `yolo_mark.sln`파일 실행합니다.
+
+  ![프로젝트속성수정](./images/3.png)
+
+  * 속성 페이지 창 왼쪽 위에 보이는 구성을 모든 구성으로 변경.
+
+  * (프로젝트 오른쪽클릭) -> 속성 -> C/C++ -> 일반 -> 추가 포함 디렉터리: `다운로드경로\opencv\build\include;`
+
+  ![프로젝트속성수정1](./images/4.png)
+
+  *  링커 -> 일반 -> 추가 라이브러리 디렉터리: `다운로드경로\opencv\build\x64\vc15\lib;`
+
+  ![프로젝트속성수정2](./images/5.png)
+
+4. Visual Studio에서 Debug모드를 Release모드로 변경후 빌드합니다.
+
+  ![프로젝트빌드](./images/6.png)
 
 * To compile on **Linux** type in console 3 commands:
     ```
@@ -15,7 +38,7 @@
     ./linux_mark.sh
     ```
 
-Supported both: OpenCV 2.x and OpenCV 3.x
+
 
 --------
 
